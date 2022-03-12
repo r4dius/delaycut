@@ -28,7 +28,7 @@
  * On a new release, don't forget to bump the version
  * in delaycut.ui and delaycut.1 too and update the ChangeLog.
  */
-#define VERSION "1.4.3.9"
+#define VERSION "1.4.4.0"
 
 namespace Ui {
     class DelayCut;
