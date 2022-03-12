@@ -10,14 +10,20 @@
     <x>0</x>
     <y>0</y>
     <width>600</width>
-    <height>584</height>
+    <height>606</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>600</width>
-    <height>584</height>
+    <height>606</height>
    </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>9</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>delaycut v1.4.4.0</string>
@@ -174,7 +180,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>180</width>
+          <width>190</width>
           <height>16777215</height>
          </size>
         </property>
@@ -195,7 +201,7 @@
           <widget class="QLabel" name="inputUnitsLabel">
            <property name="minimumSize">
             <size>
-             <width>70</width>
+             <width>75</width>
              <height>30</height>
             </size>
            </property>
@@ -294,7 +300,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>180</width>
+          <width>190</width>
           <height>16777215</height>
          </size>
         </property>
@@ -325,7 +331,7 @@
           <widget class="QLabel" name="startCuttingLabel">
            <property name="minimumSize">
             <size>
-             <width>70</width>
+             <width>75</width>
              <height>30</height>
             </size>
            </property>
@@ -374,6 +380,9 @@
              <height>30</height>
             </size>
            </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
            <property name="text">
             <string/>
            </property>
@@ -398,7 +407,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>180</width>
+          <width>190</width>
           <height>16777215</height>
          </size>
         </property>
@@ -429,7 +438,7 @@
           <widget class="QLabel" name="startDelayLabel">
            <property name="minimumSize">
             <size>
-             <width>70</width>
+             <width>75</width>
              <height>30</height>
             </size>
            </property>
@@ -502,7 +511,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>180</width>
+          <width>190</width>
           <height>16777215</height>
          </size>
         </property>
@@ -526,7 +535,7 @@
            </property>
            <property name="minimumSize">
             <size>
-             <width>80</width>
+             <width>85</width>
              <height>0</height>
             </size>
            </property>
@@ -596,7 +605,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>180</width>
+          <width>190</width>
           <height>16777215</height>
          </size>
         </property>
