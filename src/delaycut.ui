@@ -79,6 +79,9 @@
            <property name="horizontalScrollBarPolicy">
             <enum>Qt::ScrollBarAlwaysOn</enum>
            </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
           </widget>
          </item>
         </layout>

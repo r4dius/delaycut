@@ -5,7 +5,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
   DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x000000
 }
 
-CONFIG     += qt console c++11
+CONFIG     += qt c++11
 TARGET      = delaycut
 TEMPLATE    = app
 
