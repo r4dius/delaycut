@@ -70,7 +70,7 @@ DelayCut::DelayCut(QWidget *parent) :
     delayac3->ac3_crc_init();
     stringModel = new QStringListModel;
     fileInfo = new FILEINFO;
-    this->setWindowTitle(versionString);
+    setWindowTitle(versionString);
 #ifdef Q_OS_WIN
     this->setWindowIcon(QIcon(":/icon.ico"));
 #else
@@ -88,6 +88,7 @@ DelayCut::DelayCut(QWidget *parent) :
     ui->startDelayLineEdit->setText(QString::number((int) startDelay));
     ui->endDelayLineEdit->setValidator(delayValidator);
     ui->endDelayLineEdit->setText(QString::number((int) endDelay));
+    ui->horizontalLayout_6->setStretchFactor(ui->verticalLayout_5, 0);
 
     fpsValidator = new QRegExpValidator(QRegExp("[0-9]{1,6}[/|.][0-9]{1,4}"), this);
     ui->fpsLineEdit->setValidator(fpsValidator);

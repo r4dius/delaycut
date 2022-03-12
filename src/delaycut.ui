@@ -9,15 +9,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>680</width>
-    <height>694</height>
+    <width>600</width>
+    <height>584</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>584</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>delaycut v1.4.3.9</string>
+   <string>delaycut v1.4.4.0</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="3,1">
+    <property name="spacing">
+     <number>10</number>
+    </property>
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
@@ -26,11 +35,36 @@
          <string>Input file</string>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
          <item>
-          <widget class="DragDropLineEdit" name="inputFileLineEdit"/>
+          <widget class="DragDropLineEdit" name="inputFileLineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QPushButton" name="inputBrowseButton">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>32</height>
+            </size>
+           </property>
            <property name="text">
             <string>Browse</string>
            </property>
@@ -45,10 +79,25 @@
          <string>Output file</string>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
          <item>
           <widget class="DragDropLineEdit" name="outputFileLineEdit">
            <property name="enabled">
             <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
            </property>
           </widget>
          </item>
@@ -56,6 +105,12 @@
           <widget class="QPushButton" name="outputBrowseButton">
            <property name="enabled">
             <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>32</height>
+            </size>
            </property>
            <property name="text">
             <string>Browse</string>
@@ -71,6 +126,15 @@
          <string>Info</string>
         </property>
         <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
          <item row="0" column="0">
           <widget class="QTextEdit" name="infoTextEdit">
            <property name="verticalScrollBarPolicy">
@@ -91,104 +155,164 @@
     </item>
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
       <item>
        <widget class="QGroupBox" name="inputSettingsGroupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>180</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="title">
          <string>Input Settings</string>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <layout class="QFormLayout" name="formLayout_3">
-           <item row="0" column="0">
-            <widget class="QLabel" name="inputUnitsLabel">
-             <property name="text">
-              <string>Input Units:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QComboBox" name="inputUnitsComboBox">
-             <property name="currentIndex">
-              <number>2</number>
-             </property>
-             <item>
-              <property name="text">
-               <string>Audio frames</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Seconds</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Milliseconds</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Video frames</string>
-              </property>
-             </item>
-            </widget>
-           </item>
-          </layout>
+        <layout class="QFormLayout" name="verticalLayout_3">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="inputUnitsLabel">
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Input Units</string>
+           </property>
+          </widget>
          </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,4,2">
+         <item row="0" column="1">
+          <widget class="QComboBox" name="inputUnitsComboBox">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="currentIndex">
+            <number>2</number>
+           </property>
            <item>
-            <widget class="QLabel" name="fpsLabel">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="text">
-              <string>FPS:</string>
-             </property>
-            </widget>
+            <property name="text">
+             <string>Audio frames</string>
+            </property>
            </item>
            <item>
-            <widget class="QLineEdit" name="fpsLineEdit">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-             <property name="maxLength">
-              <number>11</number>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-             </property>
-            </widget>
+            <property name="text">
+             <string>Seconds</string>
+            </property>
            </item>
            <item>
-            <spacer name="horizontalSpacer_4">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>58</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
+            <property name="text">
+             <string>Milliseconds</string>
+            </property>
            </item>
-          </layout>
+           <item>
+            <property name="text">
+             <string>Video frames</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="fpsLabel">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>FPS</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="fpsLineEdit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>11</number>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>
       </item>
       <item>
        <widget class="QGroupBox" name="cuttingGroupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>180</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="title">
          <string>Cutting</string>
         </property>
         <layout class="QFormLayout" name="formLayout">
-         <property name="fieldGrowthPolicy">
-          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
          </property>
          <item row="0" column="0" colspan="2">
           <widget class="QCheckBox" name="cutFileCheckBox">
@@ -199,29 +323,25 @@
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="startCuttingLabel">
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="text">
             <string>Start (msec)</string>
-           </property>
-           <property name="scaledContents">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="startCuttingLineEdit">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="maxLength">
-            <number>8</number>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
           </widget>
          </item>
          <item row="2" column="0">
           <widget class="QLabel" name="endCuttingLabel">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="text">
             <string>End (msec)</string>
            </property>
@@ -229,6 +349,12 @@
          </item>
          <item row="2" column="1">
           <widget class="QLineEdit" name="endCuttingLineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="acceptDrops">
             <bool>false</bool>
            </property>
@@ -240,15 +366,58 @@
            </property>
           </widget>
          </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="startCuttingLineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>8</number>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
         </layout>
        </widget>
       </item>
       <item>
        <widget class="QGroupBox" name="delayGroupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>180</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="title">
          <string>Delay</string>
         </property>
         <layout class="QFormLayout" name="formLayout_2">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
          <item row="0" column="0" colspan="2">
           <widget class="QCheckBox" name="originalLengthCheckBox">
            <property name="text">
@@ -258,6 +427,12 @@
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="startDelayLabel">
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="text">
             <string>Start (msec)</string>
            </property>
@@ -265,6 +440,12 @@
          </item>
          <item row="1" column="1">
           <widget class="QLineEdit" name="startDelayLineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="acceptDrops">
             <bool>false</bool>
            </property>
@@ -278,6 +459,12 @@
          </item>
          <item row="2" column="0">
           <widget class="QLabel" name="endDelayLabel">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="text">
             <string>End (msec)</string>
            </property>
@@ -285,6 +472,12 @@
          </item>
          <item row="2" column="1">
           <widget class="QLineEdit" name="endDelayLineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="acceptDrops">
             <bool>false</bool>
            </property>
@@ -301,14 +494,41 @@
       </item>
       <item>
        <widget class="QGroupBox" name="crcErrorsGroupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>180</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="title">
          <string>CRC errors</string>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
+        <layout class="QFormLayout" name="verticalLayout">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <item row="0" column="0">
           <widget class="QRadioButton" name="ignoreRadioButton">
            <property name="enabled">
             <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>0</height>
+            </size>
            </property>
            <property name="toolTip">
             <string>Ignore CRC errors</string>
@@ -321,7 +541,7 @@
            </property>
           </widget>
          </item>
-         <item>
+         <item row="1" column="0">
           <widget class="QRadioButton" name="fixRadioButton">
            <property name="enabled">
             <bool>false</bool>
@@ -334,7 +554,7 @@
            </property>
           </widget>
          </item>
-         <item>
+         <item row="0" column="1">
           <widget class="QRadioButton" name="silenceRadioButton">
            <property name="enabled">
             <bool>false</bool>
@@ -342,12 +562,15 @@
            <property name="toolTip">
             <string>Replace an errored frame with a silenced one</string>
            </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
            <property name="text">
             <string>Silence</string>
            </property>
           </widget>
          </item>
-         <item>
+         <item row="1" column="1">
           <widget class="QRadioButton" name="skipRadioButton">
            <property name="enabled">
             <bool>false</bool>
@@ -365,10 +588,31 @@
       </item>
       <item>
        <widget class="QGroupBox" name="statusGroupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>180</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="title">
          <string>Status</string>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
          <item>
           <widget class="QLabel" name="progressLabel">
            <property name="text">
@@ -409,6 +653,12 @@
              <property name="enabled">
               <bool>false</bool>
              </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>32</height>
+              </size>
+             </property>
              <property name="text">
               <string>Abort</string>
              </property>
@@ -434,10 +684,19 @@
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item alignment="Qt::AlignTop">
          <widget class="QPushButton" name="processButton">
           <property name="enabled">
            <bool>false</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
           </property>
           <property name="text">
            <string>Process</string>
@@ -457,8 +716,14 @@
           </property>
          </spacer>
         </item>
-        <item>
+        <item alignment="Qt::AlignTop">
          <widget class="QPushButton" name="quitButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
           <property name="text">
            <string>Quit</string>
           </property>
@@ -468,19 +733,6 @@
          </widget>
         </item>
        </layout>
-      </item>
-      <item>
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>161</width>
-          <height>13</height>
-         </size>
-        </property>
-       </spacer>
       </item>
      </layout>
     </item>
